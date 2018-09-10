@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A31667DB214666B900CF8428 /* TimeLineImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31667DA214666B900CF8428 /* TimeLineImagesView.swift */; };
+		A31667DD2146683900CF8428 /* TimeLineWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31667DC2146683900CF8428 /* TimeLineWebView.swift */; };
+		A31667E12146746700CF8428 /* UIView+frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31667E02146746700CF8428 /* UIView+frame.swift */; };
 		A3794CF4213FADBC0018C6AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3794CF3213FADBC0018C6AB /* AppDelegate.swift */; };
 		A3794CF9213FADBC0018C6AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3794CF7213FADBC0018C6AB /* Main.storyboard */; };
 		A3794CFE213FADBC0018C6AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3794CFC213FADBC0018C6AB /* LaunchScreen.storyboard */; };
@@ -28,6 +31,9 @@
 		2FB0DCF73702867905CD8861 /* Pods-swiftProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-swiftProject/Pods-swiftProject.release.xcconfig"; sourceTree = "<group>"; };
 		41799D01FF72740FB88A912A /* Pods_swiftProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E1C565DEBE15995C3DEF58E /* Pods-swiftProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swiftProject/Pods-swiftProject.debug.xcconfig"; sourceTree = "<group>"; };
+		A31667DA214666B900CF8428 /* TimeLineImagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineImagesView.swift; sourceTree = "<group>"; };
+		A31667DC2146683900CF8428 /* TimeLineWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineWebView.swift; sourceTree = "<group>"; };
+		A31667E02146746700CF8428 /* UIView+frame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+frame.swift"; sourceTree = "<group>"; };
 		A3794CF0213FADBC0018C6AB /* swiftProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3794CF3213FADBC0018C6AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3794CF8213FADBC0018C6AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -67,6 +73,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A31667DE2146743700CF8428 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				A31667DF2146743F00CF8428 /* Extension */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		A31667DF2146743F00CF8428 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A31667E02146746700CF8428 /* UIView+frame.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		A3794CE7213FADBC0018C6AB = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +110,7 @@
 		A3794CF2213FADBC0018C6AB /* swiftProject */ = {
 			isa = PBXGroup;
 			children = (
+				A31667DE2146743700CF8428 /* Tool */,
 				A3794D05213FAE000018C6AB /* project */,
 				A3794CF3213FADBC0018C6AB /* AppDelegate.swift */,
 				A3794CF7213FADBC0018C6AB /* Main.storyboard */,
@@ -199,6 +222,8 @@
 			isa = PBXGroup;
 			children = (
 				A3794D22213FC96A0018C6AB /* TimeLineTableViewCell.swift */,
+				A31667DA214666B900CF8428 /* TimeLineImagesView.swift */,
+				A31667DC2146683900CF8428 /* TimeLineWebView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -332,8 +357,11 @@
 				A3794CF4213FADBC0018C6AB /* AppDelegate.swift in Sources */,
 				A3794D1F213FC39E0018C6AB /* WSGTimeLineViewController.swift in Sources */,
 				A3794D27213FCE3B0018C6AB /* User.swift in Sources */,
+				A31667DD2146683900CF8428 /* TimeLineWebView.swift in Sources */,
 				A3794D0A213FAE360018C6AB /* HomeViewController.swift in Sources */,
+				A31667DB214666B900CF8428 /* TimeLineImagesView.swift in Sources */,
 				A3794D23213FC96A0018C6AB /* TimeLineTableViewCell.swift in Sources */,
+				A31667E12146746700CF8428 /* UIView+frame.swift in Sources */,
 				A3794D2B2140C9750018C6AB /* web.swift in Sources */,
 				A3794D0E213FAE520018C6AB /* MineViewController.swift in Sources */,
 				A3794D29213FCE690018C6AB /* Image.swift in Sources */,

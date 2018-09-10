@@ -29,7 +29,18 @@ class TimeLineTableViewCell: UITableViewCell {
         return nameLabel;
     }()
     
+    lazy var titleLabel:UILabel = {
+        let titleLabel = UILabel();
+        titleLabel.textColor = UIColor.black;
+        titleLabel.font = UIFont.systemFont(ofSize: 16);
+        return titleLabel;
+    }()
     
+    lazy var webView:TimeLineWebView = {
+        let webView = TimeLineWebView();
+        webView.delegate = self as TimeLineWebClickDelegate;
+        return webView;
+    }()
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -46,5 +57,10 @@ class TimeLineTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+}
 
+extension TimeLineTableViewCell : TimeLineWebClickDelegate{
+    func TimeLineClickWeb() {
+        
+    }
 }

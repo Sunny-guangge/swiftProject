@@ -9,5 +9,7 @@ target 'swiftProject' do
   pod 'SnapKit', '~> 4.0.0'
 #  pod 'SwifterSwift'
   pod 'Alamofire', '~> 4.7'
+  pod 'SwiftyJSON', '~> 4.0'
+  pod 'SQLite.swift', '~> 0.11.5'
 
 end
