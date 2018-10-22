@@ -10,6 +10,7 @@ target 'swiftProject' do
 #  pod 'SwifterSwift'
   pod 'Alamofire', '~> 4.7'
   pod 'SwiftyJSON', '~> 4.0'
-  pod 'SQLite.swift', '~> 0.11.5'
+#  pod 'SQLite.swift', '~> 0.11.4'
+  pod 'Kingfisher', '~> 4.9.0'
 
 end

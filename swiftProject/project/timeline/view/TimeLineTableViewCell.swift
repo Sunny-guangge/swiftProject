@@ -15,7 +15,7 @@ class TimeLineTableViewCell: UITableViewCell {
         // Initialization code
     }
 
-    lazy var avatarImageView:UIImageView? = {
+    lazy var avatarImageView:UIImageView = {
         let avatarImageView = UIImageView();
         avatarImageView.contentMode = .scaleToFill;
         return avatarImageView;
@@ -42,8 +42,25 @@ class TimeLineTableViewCell: UITableViewCell {
         return webView;
     }()
     
+    var timeLine:TimeLine?;
+    
+    
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
+        self.addSubview(avatarImageView);
+        self.addSubview(nameLabel);
+        self.addSubview(titleLabel);
+        
+    }
+    
+    func setTimeLine(timeLine:TimeLine) -> Void {
+        self.timeLine = timeLine;
+        
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews();
         
         
     }
@@ -60,7 +77,7 @@ class TimeLineTableViewCell: UITableViewCell {
 }
 
 extension TimeLineTableViewCell : TimeLineWebClickDelegate{
-    func TimeLineClickWeb() {
+    func TimeLineClickWeb(web: web) {
         
     }
 }

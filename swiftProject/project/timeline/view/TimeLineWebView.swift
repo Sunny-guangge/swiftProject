@@ -8,8 +8,8 @@
 
 import UIKit
 
-protocol TimeLineWebClickDelegate : NSObjectProtocol{
-    func TimeLineClickWeb();
+@objc protocol TimeLineWebClickDelegate : NSObjectProtocol{
+    @objc optional func TimeLineClickWeb(web:web);
 }
 
 class TimeLineWebView: UIView {
@@ -36,6 +36,9 @@ class TimeLineWebView: UIView {
     
     var delegate : TimeLineWebClickDelegate?;
     
+    var web:web?;
+    
+    
     override init(frame: CGRect) {
         super.init(frame: frame);
         
@@ -55,17 +58,20 @@ class TimeLineWebView: UIView {
         imageView.height = self.height - 20;
         imageView.width = imageView.height;
         
-        
-        
+        titleLabel.top = 10;
+        titleLabel.left = imageView.width + 20;
+        titleLabel.height = self.height - 20;
+        titleLabel.width = self.width - 30 - imageView.width;
     }
     
     func setWeb(web:web) -> Void {
+        self.web = web;
         imageView.image = UIImage.init(named: web.imageUrl!);
         titleLabel.text = web.title;
     }
     
     @objc func tapped() {
-        self.delegate?.TimeLineClickWeb();
+        self.delegate?.TimeLineClickWeb!(web:self.web!);
     }
     
     required init?(coder aDecoder: NSCoder) {
